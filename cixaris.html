@@ -228,17 +228,9 @@
                         <option value="BirBank">BirBank</option>
                         <option value="LeoBank">LeoBank</option>
                         <option value="Abb Mobile">Abb Mobile</option>
-                        <option value="UniBank">UniBank</option>
                         <option value="m10">M10</option>
                         <option value="Bank Respubilka">Bank Respubilka</option>
-                        <option value="Rabitabank">Rabitabank</option>
-                        <option value="Dostbank">Dostbank</option>
-                        <option value="Nar">Nar</option>
-                        <option value="Azercell">Azercell</option>
-                        <option value="Bakcell">Bakcell</option>
-                        <option value="Mpay">Mpay</option>
                         <option value="Binance ID">Binance ID</option>
-                        <option value="emanat">eManat</option>
                     </select>
                 </div>
 
@@ -249,7 +241,7 @@
 
                 <div class="input-group">
                     <label>Çıxarılacaq Məbləğ (₼)</label>
-                    <input type="number" id="amount" placeholder="Minimum: 2₼">
+                    <input type="number" id="amount" placeholder="Minimum: 4₼">
                 </div>
 
                 <button class="withdraw-button" onclick="requestWithdraw()">
@@ -259,7 +251,7 @@
 
             <div class="info-box">
                 <i class="fas fa-info-circle"></i> 
-                Çıxarış sorğuları 24 saat ərzində yoxlanılır. Minimum çıxarış məbləği 2₼-dır. Zəhmət olmasa məlumatların düzgünlüyünə əmin olun.
+                Çıxarış sorğuları 24 saat ərzində yoxlanılır. Minimum çıxarış məbləği 4₼-dır. Zəhmət olmasa məlumatların düzgünlüyünə əmin olun.
             </div>
         </main>
 
@@ -286,9 +278,9 @@
                 return;
             }
 
-            // Minimum limit 2 AZN olaraq tənzimləndi
-            if (amount < 2) {
-                alert("Minimum çıxarış məbləği 2₼-dır.");
+            // Minimum limit 4 AZN olaraq tənzimləndi
+            if (amount < 4) {
+                alert("Minimum çıxarış məbləği 4₼-dır.");
                 return;
             }
 
@@ -319,4 +311,5 @@
 </body>
 
 </html>
+
 
